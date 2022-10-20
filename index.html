@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form" autocomplete="off" id="form">
+        <select name="categories" id="cates_select">
+            <option value="all">All</option>
+        </select>
+        <input type="text" id="input" class="input">
+        <select name="sorts" id="sorts_select">
+            <option value="az">Az</option>
+            <option value="new">New</option>
+            <option value="old">Old</option>
+            <option value="rating">Rating</option>
+        </select>
+        <button class="sub">Submit</button>
+    </form>
+    <div class="result_locals">
+
+    </div>
+    <button class="local_btn"> LocalStorage</button>
+    <div class="result">
+
+    </div>
+    <template>
+        <div class="card">
+            <img src="https://picsum.photos/200/200" alt="Kino image" class="img_top" >
+            <div class="text">
+                <h1 class="card_title">Name</h1>
+                <p class="year">year</p>
+            </div>
+            <button id="local">Local</button>
+        </div>
+    </template>
+    </div>
+    
+    <script src="./Javascript/axios.js"></script>
+    <script src="./Javascript/utils.js"></script>
+    <script src="./Javascript/main.js"></script>
+</body>
+</html>
